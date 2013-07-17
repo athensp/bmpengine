@@ -244,7 +244,7 @@ int vflip(char *filename) {
 
 #ifdef DEBUG
 
-#include "testing.h"
+#include "test.h"
 
 /** @brief Passes a non-existant file's name to the module to test the
  * 		   fopen's error handling.
