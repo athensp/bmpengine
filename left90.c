@@ -1,4 +1,5 @@
-/* left90.c includes functions to rotate a bitmap image 90 degrees left
+/*  left90.c includes functions to rotate a bitmap image 90 degrees left
+ **
  ** Copyright (C) 2012 Kyriakos Georgiou
  **
  ** This program is free software: you can redistribute it and/or modify
@@ -15,17 +16,19 @@
  ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/** @file left90.c
+/** 
+ *  @file left90.c
  *  @brief This function rotates an image by 90 degrees left
  *
  *  The function opens a bitmap image and rotates it 90
  *  degrees left by changing the position of its pixels.
  *
  *  @author Kyriakos Georgiou
+ *
  *  @bug No known bugs
  */
 
-/*Definitions' library inclusion*/
+/* Definitions' library inclusion */
 #include "def.h"
 
 PUBLIC int left90(char *filename) {

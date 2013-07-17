@@ -1,4 +1,5 @@
 /*  test.h including functions to assist testing definitions
+ **
  ** Copyright (C) 2012 Kyriakos Georgiou
  **
  ** This program is free software: you can redistribute it and/or modify
@@ -15,12 +16,15 @@
  ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/** @file test.h
+/** 
+ *  @file test.h
+ *
  * 	@brief It contains functions to assist the program's drivers
  * 	It contains functions to create a new image based on user input
- * 	@author Kyriakos Georgiou
- * 	@bug No known bugs
  *
+ * 	@author Kyriakos Georgiou
+ *
+ * 	@bug No known bugs
  */
 
 #ifndef TEST_H_

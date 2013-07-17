@@ -1,4 +1,5 @@
-/* def.h includes global definitions for bitmap editing
+/*  def.h includes global definitions for bitmap editing
+ **
  ** Copyright (C) 2012 Kyriakos Georgiou
  **
  ** This program is free software: you can redistribute it and/or modify
@@ -18,8 +19,10 @@
 /** @file def.h
  * 	@brief All library definitions and functions are
  * 	contained here
+ *
  * 	This file contains all global definitions
  * 	and the prototypes of the library functions.
+ *
  * 	@author Kyriakos Georgiou
  * 	@author Athina Pafitou
  */

@@ -1,4 +1,7 @@
-/*  test.c includes functions to assist testing for bmplib.a
+/*  test.c includes functions to assist testing for bmplib.a.
+ **
+ ** It is used by the drivers of each .c file that are used by bmplib.a.
+ **
  ** Copyright (C) 2012 Kyriakos Georgiou
  **
  ** This program is free software: you can redistribute it and/or modify
@@ -15,18 +18,22 @@
  ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/** @file test.c
+/** 
+ *  @file test.c
+ *
  * 	@brief It contains the functions to make a new image
+ *
  * 	@author Kyriakos Georgiou
+ * 
  * 	@bug No known bugs
  */
 
-/*Definition's file inclusion*/
+/* Definition's file inclusion */
 #include "test.h"
 
 PUBLIC int makeFileH(byte t1, byte t2, BITMAPFILEHEADER *ret) {
 
-	/*Setting the image's file header values into the ones given
+	/* Setting the image's file header values into the ones given
 	 * by the user */
 	ret->bfType1 = t1;
 	ret->bfType2 = t2;
@@ -69,7 +76,7 @@ PUBLIC int makeImage(char *fn, BITMAPFILEHEADER bmf, BITMAPINFOHEADER bmi) {
 	// A 2d array to represent the image.
 	PIXEL **test_img;
 
-	//A null byte to represent padding.
+	// A null byte to represent padding.
 	byte p = '\0';
 
 	/* Opening the output file */
@@ -81,7 +88,7 @@ PUBLIC int makeImage(char *fn, BITMAPFILEHEADER bmf, BITMAPINFOHEADER bmi) {
 	/* Calculating padding */
 	padding = 4 - ((bmi.biWidth * sizeof(PIXEL)) % 4);
 
-	//Setting the image's size*/
+	/* Setting the image's size */
 	bmf.bfSize = (sizeof(bmi) + sizeof(bmf)
 			+ (sizeof(PIXEL) * bmi.biHeight * bmi.biWidth));
 	if (padding < 4) {
@@ -110,6 +117,7 @@ PUBLIC int makeImage(char *fn, BITMAPFILEHEADER bmf, BITMAPINFOHEADER bmi) {
 			printf("**Error: Memory allocation error**\n");
 			return EXIT_FAILURE;
 		}
+		
 		/* Setting random values into the image's pixels
 		 * by giving red , green , and blue bytes a random value
 		 * between 0-255.*/
@@ -118,8 +126,10 @@ PUBLIC int makeImage(char *fn, BITMAPFILEHEADER bmf, BITMAPINFOHEADER bmi) {
 			test_img[i][j].green = rand() & 255;
 			test_img[i][j].blue = rand() & 255;
 		}
+		
 		/* Writing each image row with a validation check */
 		fwrite(test_img[i], sizeof(PIXEL), bmi.biWidth, fp_img);
+		
 		/* Placing padding into the new image */
 		if (padding < 4) {
 			if ((fwrite(&p, sizeof(byte), padding, fp_img)) < padding) {
@@ -135,6 +145,7 @@ PUBLIC int makeImage(char *fn, BITMAPFILEHEADER bmf, BITMAPINFOHEADER bmi) {
 
 	/* Closing the output file */
 	fclose(fp_img);
+	
 	/* Free memory previously allocated */
 	for (i = 0; i < bmi.biHeight; i++) {
 		free(test_img[i]);

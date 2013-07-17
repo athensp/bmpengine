@@ -1,4 +1,5 @@
-/*list.c includes functions to display a bitmap image's headers (metadata)
+/*  list.c includes functions to display a bitmap image's headers (metadata)
+ ** 
  ** Copyright (C) 2012 Athina Paphitou
  **
  ** This program is free software: you can redistribute it and/or modify
@@ -15,17 +16,20 @@
  ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/** @file list.c
+/** 
+ *  @file list.c
+ *
  *  @brief This function opens an image and displays the contents of its headers
  *
  *  The function opens a bitmap image and displays the contents of
  *  its INFO and FILE headers
  *
  *  @author Athina Pafitou
+ *
  *  @bug No known bugs
  */
 
-/*Definitions' library inclusion*/
+/* Definitions' library inclusion */
 #include "def.h"
 
 PUBLIC int list(char *filename) {

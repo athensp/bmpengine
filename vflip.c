@@ -1,4 +1,5 @@
-/* vflip.c includes functions to vertically flip a bitmap image
+/*  vflip.c includes functions to vertically flip a bitmap image
+ **
  ** Copyright (C) 2012 Athina Paphitou
  **
  ** This program is free software: you can redistribute it and/or modify
@@ -15,17 +16,20 @@
  ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/** @file vflip.c
+/** 
+ *  @file vflip.c
+ *
  *  @brief This function flips an image vertically
  *
  *  The function opens a bitmap image and flips it vertically by
  *  swapping the positions of the pixels of each row.
  *
  *  @author Athina Pafitou
+ *
  *  @bug No known bugs
  */
 
-/*Definitions' library inclusion*/
+/* Definitions' library inclusion */
 #include "def.h"
 
 int vflip(char *filename) {

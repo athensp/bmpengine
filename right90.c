@@ -1,4 +1,5 @@
-/* right90.c includes functions to rotate a bitmap image 90 degrees right
+/*  right90.c includes functions to rotate a bitmap image 90 degrees right
+ **
  ** Copyright (C) 2012 Athina Paphitou
  **
  ** This program is free software: you can redistribute it and/or modify
@@ -15,7 +16,9 @@
  ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/** @file right90.c
+/** 
+ *  @file right90.c
+ *
  *  @brief This function rotates an image by 90 degrees right
  *
  *  The function opens a bitmap image and rotates it 90
@@ -25,7 +28,7 @@
  *  @bug No known bugs
  */
 
-/*Definitions' library inclusion*/
+/* Definitions' library inclusion */
 #include "def.h"
 
 PUBLIC int right90(char *filename) {
@@ -284,7 +287,7 @@ PUBLIC int right90(char *filename) {
 #include "testing.h"
 
 /** @brief Passes a non-existant file's name to the module to test the
- * 		   fopen's error handling.
+ *         fopen's error handling.
  *
  *  @return EXPECTED when everything goes as expected, else UNEXPECTED.
  */

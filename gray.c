@@ -1,4 +1,5 @@
-/* gray.c includes functions to make a bitmap image grayscale
+/*  gray.c includes functions to transform a bitmap image into grayscale
+ **
  ** Copyright (C) 2012 Kyriakos Georgiou
  **
  ** This program is free software: you can redistribute it and/or modify
@@ -24,6 +25,7 @@
  * 	values of the pixel into the calculated luminance.
  *
  * 	@author Kyriakos Georgiou
+ *
  * 	@bug No known bugs
  *
  */

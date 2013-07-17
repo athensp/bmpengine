@@ -1,4 +1,5 @@
-/* main.c Client module to call functions from bmplib.a
+/*  main.c Client module to call functions from bmplib.a
+ **
  ** Copyright (C) 2012 Athina Paphitou
  **
  ** This program is free software: you can redistribute it and/or modify
@@ -15,10 +16,14 @@
  ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/** @file main.c
+/** 
+ *  @file main.c
+ *
  *  @brief The client that calls the library functions
+ *
  *  @author Kyriakos Georgiou
  *  @author Athina Pafitou
+ *
  *  @bug No known bugs
  */
 

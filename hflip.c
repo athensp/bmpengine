@@ -1,4 +1,5 @@
-/* hflip.c includes functions to flip a bitmap image horizontally
+/*  hflip.c includes functions to flip a bitmap image horizontally
+ **
  ** Copyright (C) 2012 Kyriakos Georgiou
  **
  ** This program is free software: you can redistribute it and/or modify
@@ -23,6 +24,7 @@
  * 	by swapping the pixels of each row of the image
  *
  *  @author Kyriakos Georgiou
+ *
  *  @bug No known bugs
  *
  */
