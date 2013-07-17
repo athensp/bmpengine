@@ -60,3 +60,17 @@ $./bmpengine -gray img1.bmp img2.bmp ... imgn.bmp
 ```
 $make clean
 ```
+
+
+##Testing
+
+Each .c file (except *main.c* and *test.c*) comes with it's driver that carries out some checks on the file's functions by covering most of the cases the function will have to handle.
+
+**You can test each module in the following manner:**
+
+(Let's crush test gray.c for example)
+```
+$gcc -DDEBUG test.c gray.c -o graytest
+$./graytest
+```
+
