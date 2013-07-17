@@ -2,6 +2,9 @@
 
 ###A library for editing 24-bit bitmap images.
 
+Useful information on bitmap file format:
+http://en.wikipedia.org/wiki/BMP_file_format
+
 ##Get Started
 
 Once you have the source code,
