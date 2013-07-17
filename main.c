@@ -1,6 +1,6 @@
-/*  main.c Client module to call functions from bmplib.a
+/*  main.c Client module to call library's functions
  **
- ** Copyright (C) 2012 Athina Paphitou
+ ** Copyright (C) 2012 Kyriakos Georgiou & Athina Paphitou
  **
  ** This program is free software: you can redistribute it and/or modify
  ** it under the terms of the GNU General Public License as published by
@@ -89,8 +89,8 @@ int main(int argc, char *argv[]) {
 	 * one image.*/
 	if (argc < 3) {
 		printf(
-				"**Error : Give one option and at least one image!**\n"
-						"**Please type ./bmpengine --help to see the available options**\n");
+				"Error: Give one option and at least one image.\n"
+				"Please type ./bmpengine --help to see the available options.\n");
 		return EXIT_FAILURE;
 	}
 
@@ -135,8 +135,7 @@ int main(int argc, char *argv[]) {
 	/* In case of an invalid command the options are displayed */
 	else {
 		printf("Error: Invalid command given.\n"
-				"Please type ./bmpengine --help to see the available options.\n");
-		;
+			   "Please type ./bmpengine --help to see the available options.\n");
 	}
 
 	return EXIT_FAILURE;

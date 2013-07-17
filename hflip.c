@@ -16,7 +16,8 @@
  ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/** @file hflip.c
+/** 
+ *  @file hflip.c
  *
  *  @brief This function flips an image horizontally
  *
@@ -26,10 +27,9 @@
  *  @author Kyriakos Georgiou
  *
  *  @bug No known bugs
- *
  */
 
-/*Definitions' file inclusion*/
+/* Definitions' file inclusion */
 #include "def.h"
 
 PUBLIC int hflip(char *filename) {
@@ -550,6 +550,8 @@ PRIVATE int isWorking() {
 		return EXPECTED;
 	}
 
+	printf("</isWorking>\n\n");
+	
 	return UNEXPECTED;
 }
 

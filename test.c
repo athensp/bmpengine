@@ -1,4 +1,4 @@
-/*  test.c includes functions to assist testing for bmplib.a.
+/*  test.c includes functions for testing the library
  **
  ** It is used by the drivers of each .c file that are used by bmplib.a.
  **
@@ -86,7 +86,7 @@ PUBLIC int makeImage(char *fn, BITMAPFILEHEADER bmf, BITMAPINFOHEADER bmi) {
 	}
 
 	/* Calculating padding */
-	padding = 4 - ((bmi.biWidth * sizeof(PIXEL)) % 4);
+	padding = 4 - ((bmi.biWidth * sizeof(PIXEL)) & 3);
 
 	/* Setting the image's size */
 	bmf.bfSize = (sizeof(bmi) + sizeof(bmf)

@@ -25,6 +25,7 @@
  *  degrees right by changing the position of its pixels.
  *
  *  @author Athina Pafitou
+ *
  *  @bug No known bugs
  */
 
@@ -586,6 +587,8 @@ PRIVATE int isWorking() {
 		return EXPECTED;
 	}
 
+	printf("</isWorking>\n\n");
+	
 	return UNEXPECTED;
 
 }

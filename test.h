@@ -1,4 +1,4 @@
-/*  test.h including functions to assist testing definitions
+/*  test.h includes functions for testing the library
  **
  ** Copyright (C) 2012 Kyriakos Georgiou
  **
@@ -30,7 +30,7 @@
 #ifndef TEST_H_
 #define TEST_H_
 
-/*Definition's file inclusion*/
+/* Definition's file inclusion */
 #include "def.h"
 #include <math.h> //rand()
 #define EXPECTED 1

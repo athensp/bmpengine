@@ -16,7 +16,8 @@
  ** along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/** @file gray.c
+/** 
+ *  @file gray.c
  *
  *  @brief This function converts a colored image into grayscale
  *
@@ -27,10 +28,9 @@
  * 	@author Kyriakos Georgiou
  *
  * 	@bug No known bugs
- *
  */
 
-/*Definitions' file inclusion*/
+/* Definitions' file inclusion */
 #include "def.h"
 
 PUBLIC int gray(char *filename) {
@@ -446,7 +446,7 @@ PRIVATE int *paddingCases() {
 		EXIT_FAILURE;
 	}
 
-	printf("<paddingCases()\n\n");
+	printf("<paddingCases()>\n\n");
 
 	makeFileH('B', 'M', &f_head);
 
@@ -557,6 +557,7 @@ PRIVATE int isWorking() {
 		return EXPECTED;
 	}
 
+	printf("</isWorking>\n\n");
 	return UNEXPECTED;
 }
 

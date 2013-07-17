@@ -546,6 +546,8 @@ PRIVATE int isWorking() {
 		return EXPECTED;
 	}
 
+	printf("</isWorking>\n\n");
+	
 	return UNEXPECTED;
 }
 

@@ -30,7 +30,7 @@
 #ifndef DEF_H_
 #define DEF_H_
 
-// Defining public and private to use on functions
+/* Defining public and private to use on functions */
 #define PUBLIC
 #define PRIVATE static
 
