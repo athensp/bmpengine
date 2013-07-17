@@ -56,7 +56,7 @@ $./bmpengine -right90 img1.bmp img2.bmp ... imgn.bmp
 $./bmpengine -gray img1.bmp img2.bmp ... imgn.bmp
 ```
 
-###__Clean__ (Object files)
+###__Remove object files and executables__
 ```
 $make clean
 ```
