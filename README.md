@@ -77,3 +77,12 @@ $gcc -DDEBUG test.c gray.c -o graytest
 $./graytest
 ```
 
+
+##Documentation
+
+You can build the project's documentation using Doxygen (http://www.stack.nl/~dimitri/doxygen/)
+
+**Using the Makefile and the .doxyfile**
+```
+make doxy
+```
