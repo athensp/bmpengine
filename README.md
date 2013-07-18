@@ -84,5 +84,5 @@ You can build the project's documentation using Doxygen (http://www.stack.nl/~di
 
 **Using the Makefile and the .doxyfile**
 ```
-make doxy
+$make doxy
 ```
