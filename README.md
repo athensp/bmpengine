@@ -5,6 +5,8 @@
 Useful information on bitmap file format:
 http://en.wikipedia.org/wiki/BMP_file_format
 
+uses: junit
+
 ##Get Started
 
 Once you have the source code,
