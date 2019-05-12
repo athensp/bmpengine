@@ -1,6 +1,6 @@
 #bmpengine
 
-###A library for editing 24-bit bitmap images.
+###A library for editing 24-bit bitmap pictures.
 
 Useful information on bitmap file format:
 http://en.wikipedia.org/wiki/BMP_file_format
