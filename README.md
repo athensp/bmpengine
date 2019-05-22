@@ -5,7 +5,7 @@
 Useful information on bitmap file format:
 http://en.wikipedia.org/wiki/BMP_file_format
 
-uses: junit
+uses: junit , unicode library
 
 ##Get Started
 
